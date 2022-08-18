@@ -8,6 +8,6 @@ try:
   	with open('read-ja.txt', mode = 'w', encoding="utf-8") as my_item2:
   		my_item2.write(translation)
 except FileNotFoundError as e:
-	print('cheack your file path')
+	print('cheack your file path man')
  
 
