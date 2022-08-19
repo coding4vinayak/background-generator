@@ -8,7 +8,7 @@ try:
   with open("read.txt", mode = 'r') as my_item:
   	text = my_item.read()
   	translation = translator.translate(text)
-  	with open('read-ja.txt', mode = 'w') as my_item2:
+  	with open('read-ja.txt', mode = 'w', encoding="utf-8") as my_item2:
   		my_item2.write(translation)
 except FileNotFoundError as e:
 	print('cheack your file path man')
